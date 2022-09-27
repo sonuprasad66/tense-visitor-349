@@ -1,0 +1,505 @@
+{
+  "service": [
+    {
+      "women_saloon": [
+        {
+          "id": 1,
+          "Title": "Salon For Women",
+          "videos": [
+            {
+              "id": "1",
+              "vid": "https://www.youtube.com/watch?v=BENmAwUev0Q"
+            },
+            {
+              "id": "2",
+              "vid": "https://www.youtube.com/watch?v=77wWnAJdm8I"
+            }
+          ],
+          "package": [
+            {
+              "id": "1",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1635313403372-16db5c.png",
+              "para": "BestSeller Packages"
+            },
+            {
+              "id": "2",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1635313403372-16db5c.png",
+              "para": "Make your Packages"
+            },
+            {
+              "id": "3",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1655977998579-8de14b.png",
+              "para": "Waxing"
+            },
+            {
+              "id": "4",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287480435-d29c6c.png",
+              "para": "Facial & cleanup"
+            },
+            {
+              "id": "5",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287465245-e4dca0.png",
+              "para": "Manicure"
+            },
+            {
+              "id": "6",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287464682-7ab5c1.png",
+              "para": "Pedicure"
+            },
+            {
+              "id": "7",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287464206-1f4ad4.png",
+              "para": "Threading & face wax"
+            },
+            {
+              "id": "8",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287480991-344026.png",
+              "para": "Bleach & detan"
+            },
+            {
+              "id": "9",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655287475795-1630ef.png",
+              "para": "Hair Colour & care"
+            }
+          ],
+          "packages1": [
+            {
+              "id": "1",
+              "title": "Full chocolate | chocolate roll-on waxing",
+              "price": "₹849",
+              "rating":"3.9 (240k)",
+              "time": "1 hr 5 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Eyebrow threading"
+                },
+                {
+                  "id": "2",
+                  "para": "Chocolate full arms, underarms, full legs"
+                },
+                {
+                  "id": "3",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "title": "Glow getter",
+              "price": "₹1619",
+              "rating":"4.2 (170k)",
+              "time": "1 hr 25 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "title": "Make your own package-roll on special",
+              "price": "₹1284",
+              "rating":"4.3 (440k)",
+              "time": "1 hr 50 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Full Legs (No Bikini/Brazilian) (Chocolate Roll-on)"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                },
+                {
+                  "id": "3",
+                  "para": "Full Arms(Including Underarms) (Chocolate Roll-on)"
+                },
+                {
+                  "id": "4",
+                  "para": "Eyebrow threading"
+                },
+                {
+                  "id": "5",
+                  "para": "Fack & neck detan"
+                },
+                {
+                  "id": "6",
+                  "para": "Head massage (20 min)"
+                }
+              ]
+            },
+            {
+              "id": "4",
+              "title": "Make your own package",
+              "price": "₹1850",
+              "rating":"3.9 (240k)",
+              "time": "2 hr 50 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Sara fruit cleanup"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                },
+                {
+                  "id": "3",
+                  "para": "Cut,file & polish-feet"
+                },
+                {
+                  "id": "4",
+                  "para": "Eyebrow threading"
+                },
+                {
+                  "id": "5",
+                  "para": "Fack & neck detan"
+                },
+                {
+                  "id": "6",
+                  "para": "Head massage (20 min)"
+                },
+                {
+                  "id": "7",
+                  "para": "Full Arms + Underarms Honey"
+                },
+                {
+                  "id": "8",
+                  "para": "Full legs Honey"
+                }
+              ]
+            },
+            {
+              "id": "5",
+              "title": "Complete honey waxing",
+              "price": "₹399",
+              "rating":"4.2 (3.6k)",
+              "time": "1 hr 10 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Full legs honey"
+                },
+                {
+                  "id": "2",
+                  "para": "Honey Full arms + underarms"
+                },
+                {
+                  "id": "3",
+                  "para": "Upper lip threading"
+                },
+                {
+                  "id": "4",
+                  "para": "Eyebrow threading"
+                }
+              ]
+            }
+          ],
+          "packages2": [
+            {
+              "id": "1",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100967218-f08380.png",
+              "title": "Full body",
+              "rating":"3.4 (20k)",
+              "price": "₹1399",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100955968-c5b3f1.png",
+              "title": "Stomach",
+              "price": "₹299",
+              "rating":"4.3 (240k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Covers the area from below bust to pelvis"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100969960-ef6f74.png",
+              "title": "Fruit cleanup",
+              "price": " Starts at ₹699",
+              "rating":"3.7 (30k)",
+              "time": "2 hrs 20 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "4",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1634707058605-fd6260.png",
+              "title": "Glow Facial",
+              "price": " Starts at ₹1099",
+              "rating":"3.9 (240k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "5",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657015111280-ecba9e.png",
+              "title": "Cut, file & polish(hands)",
+              "price": "₹199",
+              "rating":"3.0 (940k)",
+              "time": "15 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Quick & basic nail grooming session with a wide range of nail polishes"
+                }
+              ]
+            },
+            {
+              "id": "6",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525354775-6f2f1b.png",
+              "title": "Elysian British rose mainicure",
+              "price": "₹649",
+              "rating":"3.0 (20k)",
+              "time": "45 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Rose salt soak,scrub,cream massage, mask for soft & nourished hands"
+                }
+              ]
+            },
+            {
+              "id": "7",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657018447765-ef2c1f.png",
+              "title": "Cut, file & polish(feet)",
+              "price": "₹199",
+              "rating":"4.6 (640k)",
+              "time": "15 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "Quick & basic nail grooming session with a wide range of nail polishes"
+                }
+              ]
+            },
+            {
+              "id": "8",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525354775-6f2f1b.png",
+              "title": "Elysian British rose mainicure",
+              "price": "₹849",
+              "rating":"3.9 (240k)",
+              "time": "1 hr 5 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para1": "Rose salt soak,scrub,cream massage, mask for soft & nourished feet"
+                }
+              ]
+            },
+            {
+              "id": "9",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657523964352-5dd593.png",
+              "title": "Face wax",
+              "price": "Starts at ₹69",
+              "rating":"3.9 (240k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "10",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524490060-23016c.png",
+              "title": "Threading",
+              "price": " Starts at ₹19",
+              "rating":"3.1 (640k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para1": "Good quality thread for desired eyebrow shape & other facial areas hair removal"
+                }
+              ]
+            },
+            {
+              "id": "11",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657523167667-d1f1eb.png",
+              "title": "Detan",
+              "price": "Starts at ₹349",
+              "rating":"3.6 (240k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para1": "RAAGA detan pack infused with milk,honey, fruit extracts to remove tan"
+                }
+              ]
+            },
+            {
+              "id": "12",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657520810954-691bb1.png",
+              "title": "Bleach",
+              "price": "Starts at ₹299",
+              "rating":"3.9 (40k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "13",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524726085-34bdda.png",
+              "title": "Hair colour application",
+              "price": "Starts at ₹249",
+              "rating":"3.9 (240k)",
+              "para": [
+                {
+                  "id": "1",
+                  "para": "O3+ shine & glow facial"
+                },
+                {
+                  "id": "2",
+                  "para": "Upper lip threading"
+                }
+              ]
+            },
+            {
+              "id": "14",
+              "img": "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524725157-0eea37.png",
+              "title": "Head massage",
+              "price": "₹299",
+              "rating":"3.6 (2k)",
+              "time": "20 mins",
+              "para": [
+                {
+                  "id": "1",
+                  "para1": "Relaxing oil massage to relieve stress & promote hair growth"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "title": "Full body",
+      "price": "₹1399",
+      "para": [
+        {
+          "id": "1",
+          "para": "O3+ shine & glow facial"
+        },
+        {
+          "id": "2",
+          "para": "Upper lip threading"
+        }
+      ],
+      "id": "1",
+      "count": 1
+    }
+  ],
+  "reviews":[
+      {
+          "id":1,
+          "name":"Vishal",
+          "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,w_48,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1628519483435-dc165c.jpeg",
+          "member":"Oct 2020",
+          "review_detail":"Strongly Recommended - Value for money",
+          "star":"4.5",
+          "views":"3.5k"
+      },
+      {
+          "id":2,
+          "name":"Roshni",
+          "image":"https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,w_48,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1628519485187-8e7028.jpeg",
+          "member":"Sept 2021",
+          "review_detail":"Satisfied with the services - Value for money",
+          "star":"4.2",
+          "views":"5.5k"
+      },
+      {
+          "id":3,
+          "name":"Adi",
+          "member":"Jan 2020",
+          "review_detail":"Amazing services - Value for money",
+          "star":"4.1",
+          "views":"6.5k"
+      },
+      {
+          "id":4,
+          "name":"Supriya",
+          "image":"https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_template,w_48,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1628519492148-943b5a.jpeg",
+          "member":"Feb 2022",
+          "review_detail":"Customer Friendly Home Service Was Superb",
+          "star":"4",
+          "views":"6.3k"
+      },
+      {
+          "id":5,
+          "name":"Owii",
+          "image":"https://avatars.githubusercontent.com/u/100846987?v=4",
+          "member":"July 2020",
+          "review_detail":"Strongly Recommended - Value for money",
+          "star":"4.5",
+          "views":"9.5k"
+      },
+      {
+          "id":6,
+          "name":"Supriya",
+          "image":"https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_template,w_48,dpr_1,fl_progressive:steep,q_auto/images/growth/customer-subscription/1628519492148-943b5a.jpeg",
+          "member":"Feb 2022",
+          "review_detail":"Customer Friendly Home Service Was Superb",
+          "star":"4",
+          "views":"6.3k"
+      },
+      {
+          "id":7,
+          "name":"Owii",
+          "image":"https://avatars.githubusercontent.com/u/100846987?v=4",
+          "member":"July 2020",
+          "review_detail":"Strongly Recommended - Value for money",
+          "star":"4.5",
+          "views":"9.5k"
+      }
+
+  ]
+}
