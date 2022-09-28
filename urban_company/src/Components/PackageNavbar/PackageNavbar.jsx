@@ -20,7 +20,10 @@ const PackageNavbar = () => {
     </div>
     </div>
 
-    <div className='P_right_div'></div>
+    <div className='P_right_div'>
+    
+    
+    </div>
 
 
 
