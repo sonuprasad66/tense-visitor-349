@@ -1,6 +1,7 @@
 
 import React from 'react'
 import DetailPack from './DetailPack'
+import PackageData from './PackageData'
 import TopSection from './TopSection'
 
 const Package = () => {
@@ -9,6 +10,7 @@ const Package = () => {
       <TopSection />
       
       <DetailPack />
+      <PackageData />
      
     </div>
   )
