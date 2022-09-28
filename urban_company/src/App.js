@@ -1,8 +1,5 @@
-
-
 import MainRoutes from "./AllRoutes/MainRoutes";
 import "./App.css";
-
 
 
 
@@ -11,12 +8,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-
       
      <MainRoutes /> 
      
     
-
     </div>
   );
 }
