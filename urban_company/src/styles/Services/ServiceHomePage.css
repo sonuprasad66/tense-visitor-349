@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: axiforma-regular, -apple-system; */
+}
+
+.home_container {
+  height: 600px;
+  width: 100%;
+  border: 1px solid red;
+  background-image: url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
+  background-size: fit-content;
+}
+.home_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+.home_top_loge > img {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+.home_top_right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.home_top_right ul li {
+  padding: 16px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.register_professional {
+  border-bottom: 3px solid #ffffff;
+}
+
+.home_bottom {
+  text-align: center;
+}
+
+.home_bottom_text3 {
+  width: 60%;
+  height: 4rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+/* ----------------------------------Select Country---------------------------------------------------------- */
+.select_country {
+  width: 23%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.select_country img{
+  height: 25px;
+  width: 40px;
+}
+.select_country p{
+  font-size: 18px;
+
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+.search_country {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.home_bottom_text4 {
+  width: 30%;
+  margin: auto;
+}

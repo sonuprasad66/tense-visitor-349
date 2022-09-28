@@ -1,10 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-
-import MainLandingPage from "../Components/MainLandingPage";
-
-
 import Package from "../Components/Package/Package";
+
 
 
 
@@ -21,11 +18,19 @@ const MainRoutes = () => {
 
       </Routes>
     
+
+import Home from "./Home";
+import { Services } from "./Services";
+
+const MainRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/package" element={<Package />} />
+      <Route path="/service" element={<Services />} />
+    </Routes>
+
   );
 };
 
 export default MainRoutes;
-
-
-
-
