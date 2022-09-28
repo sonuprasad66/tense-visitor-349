@@ -37,7 +37,7 @@ const TopSection = () => {
 
             <br />
             <Flex justifyContent="space-evenly" >
-
+            
                 <Container textAlign="start" marginTop="50px">
                     <Button variant='outline' onClick={onOpen}><FaCheckCircle /><Text fontSize="xs" marginLeft="10px">UC Safe</Text></Button>
                     <Modal isOpen={isOpen} onClose={onClose} size="xl">

@@ -11,7 +11,8 @@ const DetailPack = () => {
         dispatch(getService())
         
     })
-    
+
+   
   return (
     <Box p="20px">
         <Divider orientation='horizontal' border="3px"/>
@@ -21,8 +22,8 @@ const DetailPack = () => {
             
             return (
                 
-                <Box key ={item.id} p="10px">
-                    <Image boxSize='60px' borderRadius="1rem" src={item.img} />
+                <Box key ={item.id} p="10px" cursor="pointer" >
+                    <Image boxSize='60px' borderRadius="1rem"  _hover={{border:"2px solid blue"}} src={item.img} />
                     <Text fontSize='xs' textAlign="start" boxSize='80px'>{item.para}</Text>
                 </Box>
             )
