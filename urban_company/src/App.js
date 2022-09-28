@@ -1,5 +1,3 @@
-import { Services } from "./AllRoutes/Services";
-
 import MainRoutes from "./AllRoutes/MainRoutes";
 import "./App.css";
 
