@@ -1,8 +1,16 @@
+
 import React from 'react'
+import DetailPack from './DetailPack'
+import TopSection from './TopSection'
 
 const Package = () => {
   return (
-    <div>Package</div>
+    <div>
+      <TopSection />
+      
+      <DetailPack />
+     
+    </div>
   )
 }
 
