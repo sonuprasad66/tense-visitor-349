@@ -5,7 +5,7 @@ import MainLandingPage from "../Components/MainLandingPage";
 
 
 import Package from "../Components/Package/Package";
-import Home from "./Home"
+
 
 
 const MainRoutes = () => {
@@ -14,8 +14,8 @@ const MainRoutes = () => {
       <Routes>
 
 
-      <Route path="/MainLandingPage" element={<MainLandingPage/>} />
-        <Route path="/" element={<Home />} />
+      {/* <Route path="/MainLandingPage" element={<MainLandingPage/>} /> */}
+        <Route path="/" element={<MainLandingPage />} />
         <Route path="/package" element={<Package />} />
 
 
