@@ -5,14 +5,12 @@ import {
     HStack,
     IconButton,
     useDisclosure,
-
     Image,
     Stack,
   } from "@chakra-ui/react";
   import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
   import { Link as Go } from "react-router-dom";
- 
-import Login from './Login';
+import Login from   './Login';
 
 
 
