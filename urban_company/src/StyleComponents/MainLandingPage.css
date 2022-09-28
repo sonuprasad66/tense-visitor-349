@@ -1,0 +1,62 @@
+
+  .text {
+    color: white;
+  
+    background-image: linear-gradient(
+      to left,
+  
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  .heading {
+    font-family: "Abel", sans-serif;
+    color: rgb(181, 177, 177);
+    width: 35rem;
+    font-size: xx-large;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    margin-left: -23rem;
+    margin-top: 2rem;
+  }
+  
+  .subHeading {
+    
+    width: 35rem;
+  
+    font-family: "Rubik", sans-serif;
+  
+    text-align: left;
+    font-size: 2rem;
+  }
+  
+  .exp {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    
+    margin-left: -12rem;
+    margin-top: -4rem;
+  }
+  .exp1{
+    width:25%;
+    height: 10%; 
+    
+  }
+  
