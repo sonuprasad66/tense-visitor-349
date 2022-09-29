@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BasicUsage from './P_modal'
 
 
@@ -13,7 +14,7 @@ const PackageNavbar = () => {
     </div>
     <div className='P_loco_div'>
     <h1>Delhi NCR</h1>
-<BasicUsage/>
+
                  
     
 
@@ -22,7 +23,11 @@ const PackageNavbar = () => {
 
     <div className='P_right_div'>
     
-    
+ 
+    <a href="/"> Home </a>
+    <a href="/booking">Booking</a>
+    <a href="/blog">Blog</a>
+
     </div>
 
 
