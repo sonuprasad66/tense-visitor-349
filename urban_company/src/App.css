@@ -41,27 +41,31 @@
 
 /* -------------package navbar css--------- */
 .package_navbar{
-  border: 1px solid grey;
-  width: 80%;
+  border-bottom: 1px solid rgb(219, 218, 218);
+  width: 83%;
   margin: auto;
-  height: 70px;
+  height: 62px;
   display: flex;
+  align-items: center;
 }
 
 .P_left_div{
   width: 25%;
-  border: 1px solid red;
-  height: 65px;
+  /* border: 1px solid red; */
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   
 }
 
 .P_logo_div{
 
-  border: 1px solid blue;
-  width: 20%;
+  /* border: 1px solid blue; */
+  width: 38px;
   height: 90%;
+  display: flex;
+  align-items: center;
 }
 .P_logo_div>img{
   width: 100%;
@@ -69,15 +73,83 @@
 .P_loco_div{
   width: 90%;
   height: 90%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   font-weight: bolder;
+  justify-content: flex-start;
+  text-align: left;
+  /* margin-left: 10px; */
+  padding-left: 10px;
 }
 
 .P_right_div{
   width: 75%;
   height: 65px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+align-items: center;
+padding: 5px;  
+}
+.P_right_div>a{
+  margin-left: 20px;
+  font-weight: bold;
+  /* font-size: 16px; */
+  /* font-weight:bold */
 }
 
 
+/* ------------Blog page css --------------------*/
 
+.blog_navbar{
+width: 100%;
+height: 200px;
+border: 1px solid red;
+}
+.blog_logo_div{
+
+  border: 1px solid blue;
+  width: 35%;
+  margin: auto;
+}
+
+.little_navbar{
+width: 90%;
+height: 50px;
+display: flex;
+margin: auto;
+justify-content: space-around;
+border: 1px solid grey;
+
+text-transform: uppercase;
+font-weight:500;
+align-items: center;
+font-size: 14px;
+
+}
+.little_navbar>a:hover{
+color: rgb(231, 130, 147);
+/* border: 1px solid grey; */
+
+}
+
+.beauty_image{
+  width: 100%;
+  height: 200px;
+  border: 1px solid green;
+  background-image: url("https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/26153759/beauty.png");
+  background-size: 100%;
+  font-size: 80px;
+  color: rgb(153, 152, 152);
+  align-items: center;
+}
+
+.blog_cards{
+}
+
+.blog_single_card{
+  margin: auto;
+width:600px;
+height: 200px;
+border: 1px solid pink;
+  
+}
