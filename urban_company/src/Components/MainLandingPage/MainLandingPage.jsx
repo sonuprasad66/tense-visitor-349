@@ -13,6 +13,9 @@ import {
   import { Cities } from "../assets/Cities";
 import { useNavigate } from 'react-router-dom';
 import MainLandingPageNavbar from './MainLandingPageNavbar';
+import MainLandingPageBody1 from './MainLandingPageBody1';
+import MainLandingPageBody2 from './MainLandingPageBody2';
+import MainLandingPageFooter from './MainLandingPageFooter';
 
 
 
@@ -103,6 +106,9 @@ const MainLandingPage = () => {
           </Box>
         </Box>
       </Box>
+      <MainLandingPageBody1/>
+      <MainLandingPageBody2/>
+      <MainLandingPageFooter/>
     </>
      
     </div>
