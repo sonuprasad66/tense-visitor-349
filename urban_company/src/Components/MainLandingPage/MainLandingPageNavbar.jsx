@@ -23,7 +23,7 @@ const MainLandingPageNavbar = () => {
     const Links = [
       { title: "Blog", link: "/blog" },
       { title: "Register As A Professional", link: "/" },
-     
+      { title: "My Bookings", link: "/bookings" },
     ];
   return (
     <div>
