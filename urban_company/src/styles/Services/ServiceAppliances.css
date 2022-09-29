@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: axiforma-regular, -apple-system; */
+}
+
+.appliances_container {
+  width: 100%;
+}
+
+.appliances_content {
+  width: 70%;
+  margin: auto;
+  padding: 70px 0px 0px 0px;
+}

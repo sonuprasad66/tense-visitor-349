@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bestdeal_container {
+  height: auto;
+  width: 100%;
+  border: 1px solid red;
+}
+.backgrount {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(221, 217, 217);
+}
+
+
+/* ------------------------------best offer----------------------------------------------------- */
+
+.bestdeal_offer {
+  padding: 50px;
+}
+.offer_text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #212121;
+}
+.offer_text p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #757575;
+}
+.offer_content {
+  padding: 80px 40px 30px 40px;
+}
+
+.content_box {
+  height: 270px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+.content_img {
+  height: 60%;
+  width: 100%;
+}
+.content_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.content_category {
+  padding: 20px 0 2px 0;
+}
+.content_category p {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content_price {
+  padding: 0;
+  font-size: 15px;
+  color: #757575;
+}

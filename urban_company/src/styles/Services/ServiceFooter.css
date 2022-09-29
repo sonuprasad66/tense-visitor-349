@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_container {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+}
+
+.footer_top ul {
+  display: flex;
+  list-style: none;
+}
+.footer_top ul li {
+  padding: 20px;
+}
