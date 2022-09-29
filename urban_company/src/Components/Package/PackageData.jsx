@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import {  FaStar, FaTag, FaCaretSquareDown, FaRegStar } from "react-icons/fa"
 import { useDispatch, useSelector } from 'react-redux'
 import { getService } from '../../Redux/AppRedux/action'
+import   reviewpic  from "./reviews.PNG"
 
 const PackageData = () => {
     const service = useSelector((state)=>state.AppRedux.service)
@@ -26,7 +27,7 @@ const [count,setCount] = useState(0)
         <Divider orientation='horizontal' border="2px"/>
         <br />
         <Flex>
-        <Box border="1px solid red" width="800px">
+        <Box  width="800px">
         {service.length > 0 &&
         service.map((item)=>{
             
@@ -72,13 +73,41 @@ const [count,setCount] = useState(0)
                                     </Button>
                                     </Box>
                     </Flex>
+                    
                 </Box>
             )
         })}
-            
+        <Divider orientation='horizontal' border="1px"/>
+            <Image src={reviewpic} p="20px"/>
+                    <Box textAlign="center" p="80px">
+                        {service.length >0 &&
+                        service.map((item)=>{
+                            return (
+                                <>
+                                <Divider orientation='horizontal' border="1px"/>
+                                <br />
+                                <Flex justifyContent="space-between">
+                                    <Flex gap="10px">
+                                <Image src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_profile,q_auto:low,f_auto/w_48,dpr_1,fl_progressive:steep,q_auto,c_limit/images/supply/customer-app-supply/1649054989501-7edc6d.jpeg"/>
+                                <Text fontWeight="bold">{item.name}</Text>
+                                
+                                </Flex>
+                                <Text fontSize='xs' color="gray" >Member from :-{item.member}</Text>
+                                <Flex fontSize='xs' fontWeight="bold" ><FaRegStar /> <Text fontSize="xs" marginLeft="10px">{item.star}</Text></Flex>
+                                </Flex>
+                                <Text textAlign="start">{item.review_detail}</Text>
+                                <br />
+                                
+                                <Divider orientation='horizontal' border="1px"/>
+                                </>
+                            )
+                        })}
+                        
+                    </Box>
+                    <Divider orientation='horizontal' border="1px"/>
         </Box>
         
-        <Box border="1px solid green" width="500px">
+        <Box  width="500px">
         <br /><br />
         <Button variant='outline' width="400px" justifyContent="start"><FaStar color='blue' /><Text fontSize="xs" marginLeft="30px">Save 15% on every order </Text></Button><br /><br />
         <Button variant='outline' width="400px" justifyContent="start"><FaTag color='green' /><Text fontSize="xs" marginLeft="30px">20% Cashback on Paytm</Text></Button><br /><br />
@@ -86,8 +115,21 @@ const [count,setCount] = useState(0)
         <Button variant='outline' width="400px" justifyContent="start"><FaTag color='green' /><Text fontSize="xs" marginLeft="30px">5% Simpl Cashback upto ₹750</Text></Button><br /><br />
         <Button variant='outline' width="400px" justifyContent="start"><FaTag color='green' /><Text fontSize="xs" marginLeft="30px">Assured Cashback on Paytm </Text></Button><br /><br />
         <Button variant='outline' width="400px" justifyContent="start"><FaTag color='green' /><Text fontSize="xs" marginLeft="30px">Get upto ₹500 cashback  </Text></Button><br /><br />
+        <br /><br />
+        <Button variant='solid' width="400px" colorScheme="green" justifyContent="start"><FaTag color='white' /><Text fontSize="xs" marginLeft="30px">Congratulations! ₹59 saved so far  </Text></Button>
+        <br /><br />
+        <Flex justifyContent="space-around">
+            <Flex gap="10px">
+            <Box fontWeight="bold">₹ 849</Box>
+            <Box color="gray" as="s">₹ 790</Box>
+            </Flex>
+        <Button colorScheme="purple" p="1rem" >View Cart</Button>
+          
+    
+        </Flex>
         
         </Box>
+        
         </Flex>
     </Box>
   )
