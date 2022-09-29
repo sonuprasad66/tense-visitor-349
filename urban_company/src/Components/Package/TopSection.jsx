@@ -124,7 +124,7 @@ const TopSection = () => {
                                 <iframe
                                     title='womensaloon'
                                     src='https://www.youtube.com/embed/BENmAwUev0Q'
-                                    autoplay
+                                    
                                 />
                             </AspectRatio>
                         </SwiperSlide>
@@ -133,7 +133,7 @@ const TopSection = () => {
                                 <iframe
                                     title='womensaloon'
                                     src='https://www.youtube.com/embed/Os_ZLNrLuys'
-                                    autoplay
+                                    
                                 />
                             </AspectRatio>
                         </SwiperSlide>
@@ -142,7 +142,7 @@ const TopSection = () => {
                                 <iframe
                                     title='womensaloon'
                                     src='https://www.youtube.com/embed/sCq2CaT7DBQ'
-                                    autoplay
+                                    
                                 />
                             </AspectRatio>
                         </SwiperSlide>
