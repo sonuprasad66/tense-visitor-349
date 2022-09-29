@@ -24,10 +24,10 @@ import {
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>
-            <Input type="tel" placeholder='large size' size='lg' />
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody>
+            <Input type="tel" placeholder='Search location' size='lg' />
               <Text count={2} />
             </ModalBody>
   
