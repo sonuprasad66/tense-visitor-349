@@ -141,6 +141,7 @@ color: rgb(231, 130, 147);
   font-size: 80px;
   color: rgb(153, 152, 152);
   align-items: center;
+  text-align: center;
 }
 
 .blog_cards{
@@ -192,6 +193,8 @@ border-bottom: 1px solid pink;
   width: 500px;
   height: 400px;
   margin: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .B_tab{

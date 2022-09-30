@@ -33,9 +33,9 @@ const handleSrvBtn=()=>{
       
    
       <a href="/blog"> Blog </a>
-      <a href="/blog">Register As Professional</a>
-      <a href="/blog">My Bookings</a>
-      <a href="/blog"> Logout</a>
+      <a href="">Register As Professional</a>
+      <a href="">My Bookings</a>
+      <a href="/"> Logout</a>
 
   
       </div>
