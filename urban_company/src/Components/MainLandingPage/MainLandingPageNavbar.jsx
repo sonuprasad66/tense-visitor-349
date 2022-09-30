@@ -23,7 +23,7 @@ const MainLandingPageNavbar = () => {
     const Links = [
       { title: "Blog", link: "/blog" },
       { title: "Register As A Professional", link: "/" },
-      { title: "My Bookings", link: "/bookings" },
+      
     ];
   return (
     <div>
@@ -56,8 +56,9 @@ const MainLandingPageNavbar = () => {
             spacing={8}
             alignItems={"center"}
           >
+            {/* ${localStorage.getItem("location")} */}
             <Box>
-              <Go to={`/${localStorage.getItem("location")}`}>
+              <Go to={`/service`}>
                 <Image
                   src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
                   width={"30%"}
