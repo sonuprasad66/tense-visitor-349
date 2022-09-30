@@ -136,13 +136,7 @@ const PackageData = () => {
                         <Link to="/viewcart">
                         <Button colorScheme="purple" p="1rem" >View Cart</Button>
                         </Link> 
-                        {/* <Flex gap="10px">
-                            <Box fontWeight="bold">₹ 849</Box>
-                            <Box color="gray" as="s">₹ 790</Box>
-                        </Flex>
-                        <Link to="/viewcart">
-                        <Button colorScheme="purple" p="1rem" >View Cart</Button>
-                        </Link> */}
+                        
 
                     </Flex>
 
