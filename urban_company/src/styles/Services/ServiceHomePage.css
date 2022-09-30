@@ -5,18 +5,19 @@
 }
 
 .main_container {
-  height: 900px;
+  height: auto;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-bottom: 20px;
 }
 
 .home_container {
-  height: 600px;
+  height: auto;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-image: url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
   background-size: cover;
+  padding-bottom: 120px;
 }
 .home_top {
   display: flex;
@@ -133,8 +134,67 @@
 
 /* ===============================Home Base components================================== */
 
-/* .home_base {
-  height: 100%;
+.home_base {
+  padding: 30px 0;
+}
+
+.home_base_up {
   width: 70%;
-  border: 1px solid red;
-} */
+  height: auto;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  bottom: 100px;
+
+}
+.base_up_box {
+  height: 130px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.base_up_box:hover {
+  background-color: rgb(248, 246, 246);
+}
+.base_up_box_content {
+  height: 80%;
+  width: 80%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.base_up_box_content span {
+  color: #212121;
+  font-size: 14px;
+}
+
+.up_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.up_img img {
+  height: 40px;
+  width: 40px;
+}
+
+.home_service_header {
+  text-align: center;
+  font-size: 40px;
+  color: #212121;
+  font-weight: 700;
+  padding: 40px 0;
+}
+
+.home_base_down {
+  width: 70%;
+  height: auto;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: auto;
+  padding: 20px;
+}
