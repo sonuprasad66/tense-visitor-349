@@ -2,25 +2,41 @@ import { Box, Button, Divider, Flex, Heading, Image, Popover, PopoverArrow, Popo
 import React, { useEffect, useState } from 'react'
 import { FaStar, FaTag, FaCaretSquareDown, FaRegStar } from "react-icons/fa"
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { getService } from '../../Redux/AppRedux/action'
 import reviewpic from "./reviews.PNG"
 
 const PackageData = () => {
     const service = useSelector((state) => state.AppRedux.service)
+    //console.log("service",service)
     const dispatch = useDispatch()
-
-    const [count, setCount] = useState(0)
-    const addCount = () => {
+    const [price, setPrice] = useState(0)
+//console.log("price",price)
+    const [count, setCount] = useState(1)
+    //console.log("count",count)
+    const addCount = (child) => {
+        let p = Number(child)
+        //console.log("pp",typeof(p),p)
+        //console.log("child","--",child,typeof(p))
+        //console.log("count",typeof(count),count)
         setCount(count + 1)
+        setPrice(p*count)
+        //console.log("check",p+count)
     }
-    const subCount = () => {
+    const subCount = (child) => {
+        let p = Number(child)
         setCount(count - 1)
+        setPrice(price-p)
+        //console.log("child",child)
     }
+    
 
     useEffect(() => {
         dispatch(getService())
 
-    })
+    },[dispatch])
+
+    
 
     return (
         <Box p="20px">
@@ -40,7 +56,7 @@ const PackageData = () => {
                                             <Text fontWeight="bold">{item.title}</Text>
                                             <Flex fontSize='xs' ><FaRegStar /> <Text fontSize="xs" marginLeft="10px">{item.rating}</Text></Flex>
                                             <Flex fontSize='xs' >
-                                                <Text fontSize="md" fontWeight="bold">{item.price}</Text>
+                                                <Text fontSize="md" fontWeight="bold">Starts at just ₹{item.price}</Text>
                                                 <Text fontSize="xs" marginLeft="10px" marginTop="5px">{item.time}</Text>
                                             </Flex>
                                         </Box>
@@ -49,7 +65,7 @@ const PackageData = () => {
                                             <Button colorScheme='white'>
                                                 <Popover>
                                                     <PopoverTrigger>
-                                                        <Button variant='outline' color="blue" borderRadius="5">
+                                                        <Button variant='outline' color="blue" borderRadius="5" >
                                                             <Text fontSize='xs'>ADD</Text></Button>
                                                     </PopoverTrigger>
                                                     <Portal>
@@ -58,9 +74,9 @@ const PackageData = () => {
 
                                                             <PopoverCloseButton />
                                                             <PopoverBody>
-                                                                <Button colorScheme='blue' disabled={count === 0} onClick={subCount}>-</Button>
+                                                                <Button colorScheme='blue' disabled={count === 0} onClick={()=>subCount(item.price)}>-</Button>
                                                                 <Button colorScheme='white' color={"blue"}>{count}</Button>
-                                                                <Button colorScheme='blue' onClick={addCount}>+</Button>
+                                                                <Button colorScheme='blue' onClick={()=>addCount(item.price)}>+</Button>
                                                             </PopoverBody>
                                                         </PopoverContent>
                                                     </Portal>
@@ -114,11 +130,13 @@ const PackageData = () => {
                     <br /><br />
                     <Flex justifyContent="space-around">
                         <Flex gap="10px">
-                            <Box fontWeight="bold">₹ 849</Box>
+                            <Box fontWeight="bold">₹ {price}</Box>
                             <Box color="gray" as="s">₹ 790</Box>
                         </Flex>
+                        <Link to="/viewcart">
                         <Button colorScheme="purple" p="1rem" >View Cart</Button>
-
+                        </Link> 
+                        
 
                     </Flex>
 
