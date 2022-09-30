@@ -4,12 +4,19 @@
   /* font-family: axiforma-regular, -apple-system; */
 }
 
+.main_container {
+  height: 900px;
+  width: 100%;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+
 .home_container {
   height: 600px;
   width: 100%;
   border: 1px solid red;
   background-image: url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
-  background-size: fit-content;
+  background-size: cover;
 }
 .home_top {
   display: flex;
@@ -38,14 +45,27 @@
   border-bottom: 3px solid #ffffff;
 }
 
+.home_bottom_text1 {
+  font-size: 16px;
+  color: #ffffff;
+}
+.home_bottom_text2 {
+  width: 50%;
+  font-size: 50px;
+  color: #ffffff;
+  margin: auto;
+  font-weight: 700;
+  padding: 0 0 30px 0;
+}
+
 .home_bottom {
   text-align: center;
+  margin-top: 100px;
 }
 
 .home_bottom_text3 {
   width: 60%;
   height: 4rem;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -62,25 +82,59 @@
   padding: 20px;
 }
 
-.select_country img{
+.select_country img {
   height: 25px;
   width: 40px;
 }
-.select_country p{
+.select_country p {
   font-size: 18px;
-
 }
 
-/* ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------Search icon & input box----------------------------- */
 .search_country {
   width: 75%;
   height: 100%;
-  /* border: 1px solid red; */
   background-color: #ffffff;
   border-radius: 7px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 20px;
 }
 
-.home_bottom_text4 {
-  width: 30%;
-  margin: auto;
+.search_icon {
+  width: 10%;
+  font-size: 25px;
 }
+
+.search_input_box {
+  width: 90%;
+  margin-left: -20px;
+}
+.search_input_box input {
+  height: 3rem;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.home_bottom_text4 {
+  width: 40%;
+  margin: auto;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+.home_bottom_text4 span {
+  padding: 2px;
+}
+
+/* ===============================Home Base components================================== */
+
+/* .home_base {
+  height: 100%;
+  width: 70%;
+  border: 1px solid red;
+} */

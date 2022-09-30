@@ -1,7 +1,8 @@
-import { Box, Divider, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Divider, Flex } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getService } from '../../Redux/AppRedux/action'
+import DetailPackCard from './DetailPackCard'
 
 const DetailPack = () => {
     const service = useSelector((state)=>state.AppRedux.service)
@@ -23,8 +24,8 @@ const DetailPack = () => {
             return (
                 
                 <Box key ={item.id} p="10px" cursor="pointer" >
-                    <Image boxSize='60px' borderRadius="1rem"  _hover={{border:"2px solid blue"}} src={item.img} />
-                    <Text fontSize='xs' textAlign="start" boxSize='80px'>{item.para}</Text>
+                    
+                    <DetailPackCard data={item}/>
                 </Box>
             )
         })}
