@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Package from "../Components/Package/Package";
 import Blog from "../Components/PackageNavbar/Blog";
 import PBooking from "../Components/PackageNavbar/PBooking";
+import ViewCart from "../Components/ViewCart/ViewCart";
 
 
 import Home from "./Home";
@@ -13,6 +14,7 @@ const MainRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/package" element={<Package />} />
+      <Route path="/viewcart" element={<ViewCart />}/>
       <Route path="/service" element={<Services />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/booking" element={<PBooking />} />
