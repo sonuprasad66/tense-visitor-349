@@ -1,13 +1,17 @@
 import React from "react";
 import "../styles/Services/ServiceBestDeal.css";
 import { Box, SimpleGrid } from "@chakra-ui/react";
+import { ServiceSliderComponent } from "./ServiceSliderComponent";
 
 export const ServiceBestDeal = () => {
   return (
     <div className="bestdeal_container">
+     <div className="backgrount"></div>
       {/* ========================slider======================================= */}
 
-      <div className="bestdeal_slider">slider</div>
+      <div className="bestdeal_slider">
+        <ServiceSliderComponent />
+      </div>
       <div className="backgrount"></div>
       {/* ========================image======================================= */}
 

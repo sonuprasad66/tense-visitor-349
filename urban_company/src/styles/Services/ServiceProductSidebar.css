@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.single_product {
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.single_product:hover {
+  background-color: rgb(236, 231, 231);
+}
+.prime_image {
+    margin-left: -20px;
+}
+
+.prime_image img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  
+}
+
+.prime {
+  width: 90%;
+  margin-left: 20px;
+  border-bottom: 1px solid rgb(236, 231, 231);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
