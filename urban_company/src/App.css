@@ -39,7 +39,7 @@
 }
 
 
-/* -------------package navbar css--------- */
+/* -----satStart--------package navbar css--------- */
 .package_navbar{
   border-bottom: 1px solid rgb(219, 218, 218);
   width: 83%;
@@ -153,20 +153,23 @@ width:610px;
 border-bottom: 1px solid pink;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 5px;
 }
 .single_card_img_div{
   /* border: 1px solid blue; */
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   align-self: center;
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  margin-right: 5px;
 }
 .single_card_img_div>img{
   border-radius: 12px;
+  width: 100%;
+  height: 100%;
 }
 .single_card_des_div{
   width:95%;
@@ -177,3 +180,62 @@ border-bottom: 1px solid pink;
   color: rgba(240, 26, 133, 0.918);
   font-weight: bold;
 }
+
+/*---- my bookings div--- */
+.B_logo_div{
+  /* border: 1px solid red; */
+  width: 234px;
+}
+
+.mybooking_div{
+  /* border: 1px solid blue; */
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+
+.B_tab{
+  /* border: 1px solid orange; */
+  width: 230px;
+  margin: auto;
+  margin-top: 20px;
+}
+.tablist{
+  border: 1px solid black;
+  
+  width: 229px;
+}
+
+.tablist>Tab{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.B_service_btn{
+  margin-top: 100px;
+}
+.B_service_btn>button{
+background-color: black;
+color: white;
+height: 40px;
+width: 200px;
+font-size: 20px;
+font-weight: 400;
+padding: 5px;
+text-transform: uppercase;
+/* width: 120px; */
+  border: 1px solid black;
+}
+
+
+
+/* ---pck opn mpodal css */
+.open_modal{
+
+  /* border: 1px solid red; */
+  background-color:none;
+  /* border: none; */
+  background: none;
+  height: 20px;
+  color: black;
+}
+/* ----S -css-comp- up---- */

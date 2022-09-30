@@ -14,7 +14,7 @@ const PackageNavbar = () => {
     </div>
     <div className='P_loco_div'>
     <h1>Delhi NCR</h1>
-<BasicUsage/>
+       <BasicUsage/>
                  
     
 

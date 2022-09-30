@@ -18,7 +18,7 @@ import {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
       <>
-        <Button onClick={onOpen}>Open Modal</Button>
+        <Button variant='link' className='open_modal' onClick={onOpen}>Choose location</Button>
   
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
