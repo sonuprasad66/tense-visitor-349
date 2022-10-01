@@ -117,7 +117,7 @@ const PackageData = () => {
                     <Divider orientation='horizontal' border="1px" />
                 </Box>
 
-                <Box width="500px">
+                <Box width="500px" position="sticky">
                     <br /><br />
                     <Button variant='outline' width="400px" justifyContent="start"><FaStar color='blue' /><Text fontSize="xs" marginLeft="30px">Save 15% on every order </Text></Button><br /><br />
                     <Button variant='outline' width="400px" justifyContent="start"><FaTag color='green' /><Text fontSize="xs" marginLeft="30px">20% Cashback on Paytm</Text></Button><br /><br />
