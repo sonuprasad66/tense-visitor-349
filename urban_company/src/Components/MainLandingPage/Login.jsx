@@ -38,7 +38,7 @@ const Login = () => {
 
   return (
     <div>
-     <h1>om kundu</h1>
+    
 
       <>
       <Link ref={btnRef} colorScheme="teal" onClick={onOpen}>
