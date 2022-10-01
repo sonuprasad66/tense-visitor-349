@@ -108,7 +108,7 @@ const PlusSection = () => {
                     <br /><br />
                     <Flex justifyContent="space-around">
                         <Flex gap="10px">
-                            <Box fontWeight="bold">₹ </Box>
+                            <Box fontWeight="bold">₹ 1284</Box>
                             <Box color="gray" as="s">₹ 790</Box>
                         </Flex>
                         <Link to="/checkout">

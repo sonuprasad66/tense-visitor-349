@@ -1,8 +1,6 @@
 import { Button, Heading, Flex, AspectRatio, Container, Text, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Box, Divider, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Image, ModalFooter } from '@chakra-ui/react'
 import React from 'react'
 import { FaCheckCircle, FaRegStar, FaHeart } from "react-icons/fa"
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,7 +14,7 @@ const TopSection = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box p="20px">
-            <br />
+            
              <Divider orientation='horizontal' border="1px" />
 
             <Box textAlign="start">
