@@ -1,4 +1,4 @@
-import {  Box, Button, Divider, Flex, Heading, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
+import {  Box, Button, Divider, Flex, Heading, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure, useToast } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { FaArrowLeft, FaTag } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
@@ -11,7 +11,7 @@ const CheckoutTop = () => {
   const {id} = useParams()
   const[searchParams]= useSearchParams()
   const service = useSelector((state)=>state.AppRedux.service)
-  const[data, setServiceData] = useState("")
+  const[data, setServiceData] = useState([])
 
   const dispatch = useDispatch()
   const location = useLocation()
@@ -26,7 +26,7 @@ const CheckoutTop = () => {
       }
       dispatch(getService(getServiceParams))
     }
-  },[location.search, dispatch,location,searchParams,service.length])
+  },[location, dispatch,searchParams,service])
 
 useEffect(()=>{
   if(id){
@@ -46,9 +46,7 @@ const handleCity=()=>{
 
 }
 
-const handleAlert=()=>{
- 
-}
+
 
   const OverlayTwo = () => (
     <ModalOverlay
@@ -61,7 +59,7 @@ const handleAlert=()=>{
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [overlay, setOverlay] = React.useState(<OverlayTwo />)
-
+  const toast = useToast()
   return (
     <Box padding="40px">
       <Flex gap="20px">
@@ -134,7 +132,15 @@ const handleAlert=()=>{
             </ModalBody>
             <ModalFooter>
               <Link to="/booking">
-                <Button colorScheme="purple" p="1rem" onClick={handleAlert}>Save and proceed to slots</Button>
+                <Button colorScheme="purple" p="1rem" onClick={() =>
+        toast({
+          title: 'Service Booked.',
+          description: "We've booked your service. UC Professionals will get in touch with you.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }>Save and proceed to slots</Button>
               </Link>
             </ModalFooter>
           </ModalContent>
