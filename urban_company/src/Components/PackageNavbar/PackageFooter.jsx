@@ -5,7 +5,7 @@ import { FiInstagram ,FiTwitter,FiFacebook} from "react-icons/fi";
 const PackageFooter = () => {
 
 // up to date
-
+//deleted node modules
 
 
   return (
