@@ -279,6 +279,16 @@ text-transform: uppercase;
   margin-bottom: 10px;
   /* border: 1px solid red; */
 }
+
+
+.social_logo{
+  /* border: 1px solid grey; */
+  width: 140px;
+  height: 40px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
 /* ----S -css-comp- up---- */
 
 
