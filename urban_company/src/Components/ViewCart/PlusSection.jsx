@@ -5,6 +5,8 @@ import { FaArrowLeft, FaClipboardList, FaPercentage, FaArrowRight  } from "react
 import { Link } from 'react-router-dom'
 
 const PlusSection = () => {
+ 
+
   return (
     <Box padding="40px">
 
@@ -106,10 +108,10 @@ const PlusSection = () => {
                     <br /><br />
                     <Flex justifyContent="space-around">
                         <Flex gap="10px">
-                            <Box fontWeight="bold">₹</Box>
+                            <Box fontWeight="bold">₹ </Box>
                             <Box color="gray" as="s">₹ 790</Box>
                         </Flex>
-                        <Link to="/viewcart">
+                        <Link to="/checkout">
                         <Button colorScheme="purple" p="1rem" >Proceed <FaArrowRight  /> </Button>
                         </Link> 
                         
