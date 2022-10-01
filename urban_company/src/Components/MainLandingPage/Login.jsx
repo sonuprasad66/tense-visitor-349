@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-// import firebase from "./firebase"
-// import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
+
 import {
   Drawer,
   DrawerBody,
@@ -13,16 +12,16 @@ import {
   useDisclosure,
   Input,
   Link,
+
+  
   Box,
   Text,
   PinInput,
   PinInputField,
-  DrawerFooter,
-  NumberInput,
-  NumberInputField,
+ 
 } from "@chakra-ui/react";
 import { Navigate, useNavigate } from 'react-router-dom';
-import { Link as Go } from "react-router-dom";
+
 const Login = () => {
 
 
@@ -39,7 +38,7 @@ const Login = () => {
 
   return (
     <div>
-     
+    
 
       <>
       <Link ref={btnRef} colorScheme="teal" onClick={onOpen}>
