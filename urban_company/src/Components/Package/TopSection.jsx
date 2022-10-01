@@ -17,7 +17,7 @@ const TopSection = () => {
     return (
         <Box p="20px">
             <br />
-            <Divider orientation='horizontal' border="1px" />
+             <Divider orientation='horizontal' border="1px" />
 
             <Box textAlign="start">
                 <Breadcrumb fontSize="xs">

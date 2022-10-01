@@ -47,6 +47,7 @@
   height: 62px;
   display: flex;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
 .P_left_div{
@@ -289,6 +290,22 @@ text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
+
+/* =----location div css */
+
+.location_div{
+  width: 100%;
+  height:300px;
+  /* border: 1px solid blue; */
+
+}
+
+.loco_map{
+  /* border: 1px solid red; */
+  width: 100%;
+  /* height: ; */
+}
+
 /* ----S -css-comp- up---- */
 
 
