@@ -5,7 +5,7 @@ import { getService } from '../../Redux/AppRedux/action'
 import DetailPackCard from './DetailPackCard'
 
 const DetailPack = () => {
-    const service = useSelector((state)=>state.AppRedux.service)
+    const service  = useSelector((state)=>state.AppRedux.service)
     const dispatch = useDispatch()
 
     useEffect(()=>{

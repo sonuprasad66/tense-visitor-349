@@ -1,9 +1,55 @@
-import { Box, Button, Divider, Flex, Heading, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
-import React from 'react'
+import {  Box, Button, Divider, Flex, Heading, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowLeft, FaTag } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { getService } from '../../Redux/AppRedux/action'
 
 const CheckoutTop = () => {
+
+
+  const {id} = useParams()
+  const[searchParams]= useSearchParams()
+  const service = useSelector((state)=>state.AppRedux.service)
+  const[data, setServiceData] = useState("")
+
+  const dispatch = useDispatch()
+  const location = useLocation()
+
+  
+  useEffect(()=>{
+    if(location || service.length === 0){
+      let getServiceParams={
+        params:{
+          price: searchParams.getAll("id")
+        }
+      }
+      dispatch(getService(getServiceParams))
+    }
+  },[location.search, dispatch,location,searchParams,service.length])
+
+useEffect(()=>{
+  if(id){
+    const data = service.find((ser)=> ser.id === Number(id))
+    data && setServiceData(data)
+  }
+},[id,service])
+
+
+  const addcity = JSON.parse(localStorage.getItem("addcity"))
+  const [addresscity,setaddCity]= useState()
+
+
+const handleCity=()=>{
+
+  localStorage.setItem("addcity",JSON.stringify(addcity))
+
+}
+
+const handleAlert=()=>{
+ 
+}
+
   const OverlayTwo = () => (
     <ModalOverlay
       bg='none'
@@ -19,68 +65,80 @@ const CheckoutTop = () => {
   return (
     <Box padding="40px">
       <Flex gap="20px">
-      <Link to="/viewcart"><FaArrowLeft /></Link>
-      <Text fontWeight="bold" marginBottom="5px">Summary</Text>
+        <Link to="/viewcart"><FaArrowLeft /></Link>
+        <Text fontWeight="bold" marginBottom="5px">Summary</Text>
       </Flex>
       <Divider orientation='horizontal' border="1px" /><br />
-      <Box  width="500px" margin="auto">
-      <Heading fontSize="md">Payment Summary</Heading><br />
-      <Flex justifyContent="space-between" >
-        <Text>Item Total</Text>
-        <Text>₹ 790</Text>
-      </Flex><br />
-      <Flex justifyContent="space-between" >
-        <Text>Membership Discount</Text>
-        <Text color="green">-₹ 150</Text>
-      </Flex><br />
-      <Flex justifyContent="space-between" >
-        <Text>Convenience fee</Text>
-        <Text >₹ 69</Text>
-      </Flex><br />
-      <Divider orientation='horizontal' border="0.5px" />
-      <Flex justifyContent="space-between" >
-        <Text fontWeight="bold">Total</Text>
-        <Text  fontWeight="bold">₹ 150</Text>
-      </Flex>
-      <br /><br />
-      <Button variant='solid' width="450px" colorScheme="gray"  ><FaTag color="green" fontSize="xs"  /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >Yay! You have saved ₹141 on final bill  </Text></Button>
-      <br /><br />
-      <Divider orientation='horizontal' border="2px" />
-      <br />
-      
-      <Button
-      colorScheme="purple" p="1rem"
-        ml='4'
-        onClick={() => {
-          setOverlay(<OverlayTwo />)
-          onOpen()
-        }}
-      >
-        Add Addreess and Slots 
-      </Button>
-      <Modal isCentered isOpen={isOpen} onClose={onClose} size= "3xl" >
-        {overlay}
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Flex justifyContent="space-between">
-              <Box></Box>
-              <Box width="250px">
-              <Input placeholder='House/Flat No*' required /><br /><br />
-              <Input placeholder='Name' />
-              </Box>
-            </Flex>
+      <Box width="500px" margin="auto">
+        <Heading fontSize="md">Payment Summary</Heading><br />
+        <Flex justifyContent="space-between" >
+          <Text>Item Total</Text>
+          <Text>₹ 1284</Text>
           
-          
-          </ModalBody>
-          <ModalFooter>
-            <Link to="/booking">
-            <Button colorScheme="purple" p="1rem">Save and proceed to slots</Button>
-            </Link>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+        </Flex><br />
+        <Flex justifyContent="space-between" >
+          <Text>Membership Discount</Text>
+          <Text color="green">-₹ 150</Text>
+        </Flex><br />
+        <Flex justifyContent="space-between" >
+          <Text>Convenience fee</Text>
+          <Text >₹ 69</Text>
+        </Flex><br />
+        <Divider orientation='horizontal' border="0.5px" />
+        <Flex justifyContent="space-between" >
+          <Text fontWeight="bold">Total</Text>
+          <Text fontWeight="bold">₹ 1203</Text>
+        </Flex>
+        <br /><br />
+        <Button variant='solid' width="450px" colorScheme="gray"  ><FaTag color="green" fontSize="xs" /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >Yay! You have saved ₹141 on final bill  </Text></Button>
+        <br /><br />
+        <Divider orientation='horizontal' border="2px" />
+        <br />
+
+        <Button
+          colorScheme="purple" p="1rem"
+          ml={150}
+          onClick={() => {
+            setOverlay(<OverlayTwo />)
+            onOpen()
+          }}
+        >
+          Add Addreess and Slots
+        </Button>
+        <Modal isCentered isOpen={isOpen} onClose={onClose} size="3xl" >
+          {overlay}
+          <ModalContent>
+            <ModalHeader>{addresscity?  addresscity: "Canaught Palace, Delhi"}</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              <Flex justifyContent="space-between" gap="10px">
+                <Box width="500px">
+                  <iframe className='loco_map' title="map" width="450" height="320" id="gmap_canvas"
+                    src={`https://maps.google.com/maps?q=${addresscity}&t=&z=13&ie=UTF8&iwloc=&output=embed`}>
+                  </iframe>
+
+                </Box>
+                <Box width="250px">
+                  <Box></Box>
+                  <Input placeholder='House/Flat No*' defaultValue={addresscity ? addresscity : ""}
+            value={addresscity}
+            onChange={(e)=>setaddCity(e.target.value)}
+            type="tel" required /><br /><br />
+                  <Input placeholder='Landmark(Optional)' /><br /><br />
+                  <Input placeholder='Name' required/><br /><br />
+                  <Button colorScheme="purple" onClick={handleCity} variant='outline'>Choose City</Button>
+                </Box>
+              </Flex>
+
+
+            </ModalBody>
+            <ModalFooter>
+              <Link to="/booking">
+                <Button colorScheme="purple" p="1rem" onClick={handleAlert}>Save and proceed to slots</Button>
+              </Link>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </Box>
     </Box>
   )

@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import BasicUsage from './P_modal'
 
 
 const PackageNavbar = () => {
 
 
-  const city = JSON.parse(localStorage.getItem("city"))
+  const city = JSON.parse(localStorage.getItem("city")) || "Delhi"
   return (
     <div className='package_navbar'>
       
