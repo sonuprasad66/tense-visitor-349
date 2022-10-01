@@ -12,6 +12,8 @@ import {
   useDisclosure,
   Input,
   Link,
+
+  
   Box,
   Text,
   PinInput,
@@ -19,7 +21,7 @@ import {
  
 } from "@chakra-ui/react";
 import { Navigate, useNavigate } from 'react-router-dom';
-import { Link as Go } from "react-router-dom";
+
 const Login = () => {
 
 
@@ -36,7 +38,7 @@ const Login = () => {
 
   return (
     <div>
-     
+    
 
       <>
       <Link ref={btnRef} colorScheme="teal" onClick={onOpen}>
