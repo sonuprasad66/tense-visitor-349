@@ -4,6 +4,9 @@ import BasicUsage from './P_modal'
 
 
 const PackageNavbar = () => {
+
+
+  const city = JSON.parse(localStorage.getItem("city"))
   return (
     <div className='package_navbar'>
       
@@ -13,7 +16,7 @@ const PackageNavbar = () => {
 
     </div>
     <div className='P_loco_div'>
-    <h1>Delhi NCR</h1>
+    <h1>{city?  city: "Delhi"}</h1>
        <BasicUsage/>
                  
     
@@ -24,7 +27,7 @@ const PackageNavbar = () => {
     <div className='P_right_div'>
     
  
-    <a href="/"> Home </a>
+    <a href="/service"> Home </a>
     <a href="/booking">Booking</a>
     <a href="/blog">Blog</a>
 
