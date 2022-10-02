@@ -20,6 +20,8 @@ export const ServiceAppliances = () => {
               <div className="content_box">
                 <div className="content_img">
                   <img
+
+                  
                     src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_c0667020.png"
                     alt="hair"
                   />

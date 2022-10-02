@@ -22,7 +22,8 @@ export const ServiceSliderComponent = () => {
           <SwiperSlide>
             <Box>
               <div className="SliderBox">
-                <img
+                <img className="slider_img"  
+               
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1662377264033-320229.png"
                   alt="s1"
                 />

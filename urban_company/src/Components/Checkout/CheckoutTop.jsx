@@ -2,12 +2,18 @@ import {  Box, Button, Divider, Flex, Heading, Input, Modal, ModalBody, ModalClo
 import React, { useEffect, useState } from 'react'
 import { FaArrowLeft, FaTag } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { getService } from '../../Redux/AppRedux/action'
 
 const CheckoutTop = () => {
 
-
+const navigate= useNavigate()
+const wait=()=>{
+  setTimeout(()=>{
+// window.location.href="/booking"
+navigate("/booking")
+  },2000)
+}
   const {id} = useParams()
   const[searchParams]= useSearchParams()
   const service = useSelector((state)=>state.AppRedux.service)
@@ -62,6 +68,9 @@ const handleCity=()=>{
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [overlay, setOverlay] = React.useState(<OverlayTwo />)
   const toast = useToast()
+
+
+  const kartPrice = JSON.parse(localStorage.getItem("price"))
   return (
     <Box padding="40px">
       <Flex gap="20px">
@@ -69,66 +78,11 @@ const handleCity=()=>{
         <Text fontWeight="bold" marginBottom="5px">Summary</Text>
       </Flex>
       <Divider orientation='horizontal' border="1px" /><br />
-
-      <Box  width="500px" margin="auto">
-      <Heading fontSize="md">Payment Summary</Heading><br />
-      <Flex justifyContent="space-between" >
-        <Text>Item Total</Text>
-        <Text>₹ 790</Text>
-      </Flex><br />
-      <Flex justifyContent="space-between" >
-        <Text>Membership Discount</Text>
-        <Text color="green">-₹ 150</Text>
-      </Flex><br />
-      <Flex justifyContent="space-between" >
-        <Text>Convenience fee</Text>
-        <Text >₹ 69</Text>
-      </Flex><br />
-      <Divider orientation='horizontal' border="0.5px" />
-      <Flex justifyContent="space-between" >
-        <Text fontWeight="bold">Total</Text>
-        <Text  fontWeight="bold">₹ 150</Text>
-      </Flex>
-      <br /><br />
-      <Button variant='solid' width="450px" colorScheme="gray"  ><FaTag color="green" fontSize="xs"  /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >Yay! You have saved ₹141 on final bill  </Text></Button>
-      <br /><br />
-      <Divider orientation='horizontal' border="2px" />
-      <br />
-      
-      <Button
-      colorScheme="purple" p="1rem"
-        ml='4'
-        onClick={() => {
-          setOverlay(<OverlayTwo />)
-          onOpen()
-        }}
-      >
-        Add Addreess and Slots 
-      </Button>
-      <Modal isCentered isOpen={isOpen} onClose={onClose} size= "3xl" >
-        {overlay}
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Flex justifyContent="space-between">
-              <Box>
-              
-             
-              
-              </Box>
-              <Box width="250px">
-              <Input placeholder='House/Flat No*' required /><br /><br />
-              <Input placeholder='Name' />
-              </Box>
-            </Flex>
-
       <Box width="500px" margin="auto">
         <Heading fontSize="md">Payment Summary</Heading><br />
         <Flex justifyContent="space-between" >
           <Text>Item Total</Text>
-          <Text>₹ 1284</Text>
-
+          <Text>₹ {kartPrice}</Text>
           
         </Flex><br />
         <Flex justifyContent="space-between" >
@@ -142,10 +96,10 @@ const handleCity=()=>{
         <Divider orientation='horizontal' border="0.5px" />
         <Flex justifyContent="space-between" >
           <Text fontWeight="bold">Total</Text>
-          <Text fontWeight="bold">₹ 1203</Text>
+          <Text fontWeight="bold">₹ {kartPrice-150+69}</Text>
         </Flex>
         <br /><br />
-        <Button variant='solid' width="450px" colorScheme="gray"  ><FaTag color="green" fontSize="xs" /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >Yay! You have saved ₹141 on final bill  </Text></Button>
+        <Button variant='solid' width="450px" colorScheme="gray"  ><FaTag color="green" fontSize="xs" /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >Yay! You have saved ₹ 150 on final bill  </Text></Button>
         <br /><br />
         <Divider orientation='horizontal' border="2px" />
         <br />
@@ -188,7 +142,7 @@ const handleCity=()=>{
 
             </ModalBody>
             <ModalFooter>
-              <Link to="/booking">
+              <Box onClick={wait}>
                 <Button colorScheme="purple" p="1rem" onClick={() =>
         toast({
           title: 'Service Booked.',
@@ -198,7 +152,7 @@ const handleCity=()=>{
           isClosable: true,
         })
       }>Save and proceed to slots</Button>
-              </Link>
+              </Box>
             </ModalFooter>
           </ModalContent>
         </Modal>

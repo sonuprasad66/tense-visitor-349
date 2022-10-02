@@ -8,35 +8,43 @@ import reviewpic from "./reviews.PNG"
 
 const PackageData = () => {
     const service = useSelector((state) => state.AppRedux.service)
-    //console.log("service",service)
+   
     const dispatch = useDispatch()
     const [price, setPrice] = useState(0)
-//console.log("price",price)
+
+    localStorage.setItem("price",JSON.stringify(price))
+   
+
     const [count, setCount] = useState(1)
-    //console.log("count",count)
+
     const addCount = (child) => {
         let p = Number(child)
-        //console.log("pp",typeof(p),p)
-        //console.log("child","--",child,typeof(p))
-        //console.log("count",typeof(count),count)
+       
         setCount(count + 1)
         setPrice(p*count)
-        //console.log("check",p+count)
+     
     }
     const subCount = (child) => {
         let p = Number(child)
         setCount(count - 1)
         setPrice(price-p)
-        //console.log("child",child)
+        
+        // localStorage.setItem("price",JSON.stringify(price))
     }
     
-
+    
     useEffect(() => {
         dispatch(getService())
-
+        
     },[dispatch])
-
     
+    const handleBookingData=(bookedItem)=>{
+        
+
+    localStorage.setItem("bookedData",JSON.stringify(bookedItem))
+
+
+    }
 
     return (
         <Box p="20px">
@@ -65,7 +73,7 @@ const PackageData = () => {
                                             <Button colorScheme='white'>
                                                 <Popover>
                                                     <PopoverTrigger>
-                                                        <Button variant='outline' color="blue" borderRadius="5" >
+                                                        <Button onClick={()=>handleBookingData(item)} variant='outline' color="blue" borderRadius="5" >
                                                             <Text fontSize='xs'>ADD</Text></Button>
                                                     </PopoverTrigger>
                                                     <Portal>
@@ -75,7 +83,7 @@ const PackageData = () => {
                                                             <PopoverCloseButton />
                                                             <PopoverBody>
                                                                 <Button colorScheme='blue' disabled={count === 0} onClick={()=>subCount(item.price)}>-</Button>
-                                                                <Button colorScheme='white' color={"blue"}>{count}</Button>
+                                                                <Button colorScheme='white' color={"blue"}>{count-1}</Button>
                                                                 <Button colorScheme='blue' onClick={()=>addCount(item.price)}>+</Button>
                                                             </PopoverBody>
                                                         </PopoverContent>
