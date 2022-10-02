@@ -65,7 +65,11 @@ const CheckoutTop = () => {
           <ModalCloseButton />
           <ModalBody>
             <Flex justifyContent="space-between">
-              <Box></Box>
+              <Box>
+              
+             
+              
+              </Box>
               <Box width="250px">
               <Input placeholder='House/Flat No*' required /><br /><br />
               <Input placeholder='Name' />
