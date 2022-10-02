@@ -1,2 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+}
 
+.SliderBox {
+  cursor: pointer;
+  height: auto;
+}
+
+.external-buttons {
+  background-color: #ffffff;
+  font-size: 100px;
+}

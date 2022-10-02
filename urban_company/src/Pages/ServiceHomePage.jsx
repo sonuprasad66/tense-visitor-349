@@ -95,7 +95,7 @@ export const ServiceHomePage = () => {
         <div className="home_base_up">
           <SimpleGrid columns={[2, 3, 4, 5]} spacing="10px">
             <Box>
-            <ServiceProductSidebar />
+              <ServiceProductSidebar />
               {/* <div className="base_up_box" onClick={handleProductSidebar}>
                 <div className="base_up_box_content">
                   <div className="up_img">

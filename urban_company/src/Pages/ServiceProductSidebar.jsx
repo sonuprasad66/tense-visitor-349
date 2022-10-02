@@ -10,10 +10,9 @@ import {
   DrawerCloseButton,
   Button,
   useDisclosure,
-  Input,
-  Link,
 } from "@chakra-ui/react";
 import { FaAngleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const ServiceProductSidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -50,7 +49,7 @@ export const ServiceProductSidebar = () => {
           <DrawerHeader>Salon for Women</DrawerHeader>
 
           <DrawerBody>
-            <Link to={"/package"}>
+            <Link to="/package">
               <div className="single_product">
                 <div className="prime_image">
                   <img
