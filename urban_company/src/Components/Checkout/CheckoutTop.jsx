@@ -35,6 +35,8 @@ useEffect(()=>{
   }
 },[id,service])
 
+//updates
+
 
   const addcity = JSON.parse(localStorage.getItem("addcity"))
   const [addresscity,setaddCity]= useState()
@@ -202,6 +204,8 @@ const handleCity=()=>{
         </Modal>
       </Box>
     </Box>
+
+
   )
 }
 
