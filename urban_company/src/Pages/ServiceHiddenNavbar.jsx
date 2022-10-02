@@ -11,7 +11,9 @@ export const ServiceHiddenNavbar = () => {
             <FaSistrix />
           </div>
           <div className="input_box">
-            <input type="text" placeholder="Search for services" />
+            <input style={{
+              outline:"none"
+            }} type="text" placeholder="Search for services" />
           </div>
         </div>
 

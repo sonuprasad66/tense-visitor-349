@@ -14,3 +14,11 @@
   margin: auto;
   padding: 70px 0px 0px 0px;
 }
+
+.content_img:hover{
+  /* border: 1px solid blue; */
+  width: 105%;
+  height: 169px;
+  transition: 0.2s ease;
+border-radius: 12px;
+}

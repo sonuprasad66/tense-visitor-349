@@ -12,9 +12,22 @@
 }
 
 .SliderBox {
+  /* border: 1px solid red; */
   cursor: pointer;
   height: auto;
 }
+.SliderBox img:hover{
+  /* width: 362px; */
+  /* border: 1px solid green; */
+  /* border-radius: 12px; */
+  width: 115%;
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .slider_img:hover{
+border: 1px solid blue;
+width: 300px;
+} */
 
 .external-buttons {
   background-color: #ffffff;

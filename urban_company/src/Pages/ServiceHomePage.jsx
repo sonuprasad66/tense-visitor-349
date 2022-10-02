@@ -5,6 +5,7 @@ import { ServiceSidebar } from "./ServiceSidebar";
 import { FaSistrix, FaAngleDown } from "react-icons/fa";
 import { SimpleGrid, Box } from "@chakra-ui/react";
 import { ServiceProductSidebar } from "./ServiceProductSidebar";
+import Login from "../Components/MainLandingPage/Login";
 
 export const ServiceHomePage = () => {
   const handleProductSidebar = () => {
@@ -33,7 +34,7 @@ export const ServiceHomePage = () => {
                 </Link>
               </li>
               <li>
-                <ServiceSidebar />
+          <Login/>
               </li>
             </ul>
           </div>
@@ -69,7 +70,9 @@ export const ServiceHomePage = () => {
                 <FaSistrix />
               </div>
               <div className="search_input_box">
-                <input type="text" placeholder="Search for services" />
+                <input type="text" style={{
+                  outline:"none"
+                }} placeholder="Search for services" />
               </div>
             </div>
           </div>
