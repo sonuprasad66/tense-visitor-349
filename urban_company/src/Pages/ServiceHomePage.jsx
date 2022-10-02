@@ -26,7 +26,7 @@ export const ServiceHomePage = () => {
           <div className="home_top_right">
             <ul>
               <li>
-                <Link>Blog</Link>
+                <Link to={"/blog"} >Blog</Link>
               </li>
               <li>
                 <Link className="register_professional">
