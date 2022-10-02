@@ -129,7 +129,7 @@ const handleCity=()=>{
                 </Box>
                 <Box width="250px">
                   <Box></Box>
-                  <Input placeholder='House/Flat No*' defaultValue={addresscity ? addresscity : ""}
+                  <Input placeholder='Enter Address' defaultValue={addresscity ? addresscity : ""}
             value={addresscity}
             onChange={(e)=>setaddCity(e.target.value)}
             type="tel" required /><br /><br />
