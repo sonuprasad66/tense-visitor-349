@@ -24,11 +24,13 @@ import {
 import { Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } =    useDisclosure();
+
+
   const btnRef = React.useRef();
 
 
-  
+
   const navigate = useNavigate();
 
   const handleAlert = () => {
@@ -70,16 +72,14 @@ const Login = () => {
             </DrawerBody>
             <Box display={"none"} id="otp">
               <Text
-                // mt={"5"}
-                // mb={"2.5"}
+            
                 fontWeight={"bold"}
                 fontFamily={"sans-serif"}
-                // mt={-485}
-                // ml={58}
+             
                 textAlign={"center"}
               >
                 Enter OTP:
-                {/* onChange={verifyPin} */}
+              
               </Text>
               <Box m="auto" ml="10%">
                 <PinInput>
@@ -105,7 +105,7 @@ const Login = () => {
             >
               Login
             </Button>
-            {/* <Button colorScheme="blue">Login</Button> */}
+            
             <div id="recaptcha-container"></div>
           </DrawerContent>
         </Drawer>
