@@ -30,7 +30,7 @@ const Login = () => {
 
   const navigate=useNavigate()
 
-  const nurpul=()=>{
+  const handleAlert=()=>{
     alert("Otp has been Successfully Sent")
     document.getElementById("om").style.display="none"
     document.getElementById("otp").style.display="block"
@@ -53,11 +53,11 @@ const Login = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Please Login To Countinue</DrawerHeader>
+          <DrawerHeader>Please Login To Continue</DrawerHeader>
           
           <DrawerBody id="om">
           <DrawerBody>
-            <Input placeholder="Enter Your Mobile Number..."maxLength={10} / >
+            <Input placeholder="Enter Your Mobile Number..."maxLength={10} w={207} / >
             
 
           </DrawerBody>
@@ -65,7 +65,7 @@ const Login = () => {
           <DrawerBody mb={500} ml={70}>
             
             <Button colorScheme="blue"
-            onClick={nurpul}
+            onClick={handleAlert}
           
             >Continue</Button>
           </DrawerBody>

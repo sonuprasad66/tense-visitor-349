@@ -51,10 +51,11 @@ const MainLandingPageNavbar = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack
-            border={"1px  red"}
-            width={"90%"}
+            // border={"1px solid red"}
+            width={"100%"}
             spacing={8}
-            alignItems={"center"}
+            // alignItems={"center"}
+            justifyContent={"space-between"}
           >
             {/* ${localStorage.getItem("location")} */}
             <Box>
@@ -69,6 +70,8 @@ const MainLandingPageNavbar = () => {
               as={"nav"}
               spacing={20}
               display={{ base: "none", md: "flex" }}
+              // border={"2px solid teal"}
+          
             >
               {Links.map((link, index) => (
                 <Go to={link.link} key={index}>
