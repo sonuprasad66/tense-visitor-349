@@ -9,7 +9,7 @@ import PackageFooter from "../PackageNavbar/PackageFooter";
 const Package = () => {
   return (
     <div>
-    <PackageNavbar/>
+    <PackageNavbar />
       <TopSection />
 
       <DetailPack />

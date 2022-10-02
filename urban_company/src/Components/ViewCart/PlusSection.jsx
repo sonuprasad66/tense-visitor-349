@@ -5,7 +5,7 @@ import { FaArrowLeft, FaClipboardList, FaPercentage, FaArrowRight  } from "react
 import { Link } from 'react-router-dom'
 
 const PlusSection = () => {
- 
+ const kartPrice = JSON.parse(localStorage.getItem("price"))
 
   return (
     <Box padding="40px">
@@ -104,11 +104,11 @@ const PlusSection = () => {
           </Box><br />
           <br />
           <Divider orientation='horizontal' border="3px" /><br /><br />
-          <Button variant='solid' width="450px" colorScheme="gray"  ><FaPercentage color="green" fontSize="xs"  /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >₹141 Plus discount applied  </Text></Button>
+          <Button variant='solid' width="450px" colorScheme="gray"  ><FaPercentage color="green" fontSize="xs"  /><Text fontSize="xs" textAlign="center" color="green" marginLeft="10px" >₹ 150 Plus discount applied  </Text></Button>
                     <br /><br />
                     <Flex justifyContent="space-around">
                         <Flex gap="10px">
-                            <Box fontWeight="bold">₹ </Box>
+                            <Box fontWeight="bold">₹ {kartPrice}</Box>
                             <Box color="gray" as="s">₹ 790</Box>
                         </Flex>
                         <Link to="/checkout">

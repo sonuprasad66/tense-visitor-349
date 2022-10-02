@@ -6,8 +6,9 @@
 .bestdeal_container {
   height: auto;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
+  
 }
 .backgrount {
   height: 20px;

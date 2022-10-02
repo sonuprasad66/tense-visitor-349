@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import { Navigate } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 const PBooking = () => {
 
@@ -9,17 +9,25 @@ const PBooking = () => {
 const handleSrvBtn=()=>{
   window.location.href="/package"
 }
+const goService=()=>{
+  window.location.href="/service"
+}
 
-  
+  const mybooking= JSON.parse(localStorage.getItem("bookedData")) 
+
+ console.log(mybooking)
+
     return (
       <>
       <div className='package_navbar'>
       
       <div className="P_left_div">
-      <div className='B_logo_div'>
+   
+      <div onClick={goService}  className='B_logo_div'>
       <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/images/supply/partner-training/1628575858610-5b0ae4.png" alt="" />
       
       </div>
+      
       <div className='P_loco_div'>
     
 
@@ -68,7 +76,36 @@ const handleSrvBtn=()=>{
   </TabList>
   <TabPanels>
     <TabPanel>
-      <p>You don't have any active projects right now</p>
+
+    {
+
+      
+      mybooking ? (
+
+      <div className='booking_div' >
+      
+      <img  src={mybooking.img} alt="" />
+      <h2> <span style={{
+        fontWeight:"bold",
+        
+      }}>
+      Name:
+      </span>  {mybooking.name}</h2>
+      <h2>
+      <span style={{
+        fontWeight:"bold"
+      }}>Service: </span>  
+      {mybooking.para}</h2>
+      <h2>
+      <span style={{
+        fontWeight:"bold"
+      }}>Time: </span>
+      {mybooking.time}</h2>
+      
+      
+      </div>):" You havn't book anything"
+    }
+     
     </TabPanel>
     <TabPanel>
       <p>Blank..</p>
