@@ -78,16 +78,97 @@
 
 
 
-## Contact
+## Getting Started
+
+This project was built using React v 18.0.5, Redux v 4.1.2, Chakra UI, CSS and Rest API. It is a web application and for running on your local environment you should follow these guidelines.
 
 
-If you want to contact me, you can reach me through below handles.
+### Prerequisites
 
-[![linkedin](https://img.shields.io/badge/sonuprasad66-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sonuprasad66/)
-[![Github](https://img.shields.io/badge/sonuprasad66-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/sonuprasad66/)
+- NPM 
 
-© 2022 Sonu Prasad
+### Setup
 
+
+The project repository can be found in [GitHub link](https://github.com/sonuprasad66/tense-visitor-349) or just clone the project using this command. 
+
+
+```
+Using HTTPS
+
+# git clone https://github.com/sonuprasad66/tense-visitor-349.git
+```
+
++ Open terminal on your workspace with
+
+```
+cd /urban_company
+```
+
+
+## Install
+
+Install NPM
+
+Check that you have node and npm installed
+
+To check if you have Node.js installed, run this command in your terminal:
+
+
+```
+node -v
+```
+
+To confirm that you have npm installed you can run this command in your terminal:
+
+
+```
+npm -v
+```
+
+
+To install all the dependences of the project, run the following command:
+
+
+```
+npm install
+```
+
+
+To run the application, run the following command:
+
+```
+npm run start
+```
+
+
+### Tools used on this project
+
+- Visual Studio Code
+- Create React App
+
+<br/>
+
+
+
+
+## Built with
+- React JS
+- Redux JS
+- Redux Thunk
+- Advance JavaScript (ES6)
+- CSS3
+- Chakra UI
+- Styled Components
+- React Icons
+- Swiper
+- Geo Location
+
+## Creators
+- [@Sonu Prasad](https://github.com/sonuprasad66)
+- [@Satyam Gupta](https://github.com/satyamasai)
+- [@MD OWAIS ATHAR](https://github.com/owii8247)
+- [@Om kundu](https://github.com/omkundu)
 
 
 
