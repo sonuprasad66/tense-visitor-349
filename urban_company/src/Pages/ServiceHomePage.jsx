@@ -11,7 +11,7 @@ export const ServiceHomePage = () => {
   const handleProductSidebar = () => {
     // <ServiceProductSidebar />;
   };
-
+const Vpin= localStorage.getItem("Vpin")
   return (
     <div className="main_container">
       <div className="home_container">
@@ -34,7 +34,7 @@ export const ServiceHomePage = () => {
                 </Link>
               </li>
               <li>
-          <Login/>
+          {Vpin ? <Link to="/">Logout</Link> : <Login />}
               </li>
             </ul>
           </div>
@@ -43,7 +43,7 @@ export const ServiceHomePage = () => {
         <div className="home_bottom">
           <div className="home_bottom_text1">
             <p>
-              <span>Home</span> / <span>delhi-ncr</span>
+              <span>Home</span> / <span>Delhi-NCR</span>
             </p>
           </div>
           <div className="home_bottom_text2">

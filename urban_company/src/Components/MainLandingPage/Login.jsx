@@ -25,6 +25,25 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { isOpen, onOpen, onClose } =    useDisclosure();
+  
+  const mypin=Math.floor(100000+Math.random()*900000)
+  const [pin ,setPin] = useState(`${mypin}`)
+  console.log("pin1", pin)
+  localStorage.setItem("Vpin",pin)
+  
+  const validate=()=>{
+    const Vpin= localStorage.getItem("Vpin")
+    // setPin(`${Vpin.toString()}`)
+    console.log("Vpin",Vpin)
+    console.log("pin",pin)
+if(pin===Vpin){
+alert("Login successfull!")
+  navigate("/service");
+}else{
+  // console.log(pin ,  mypin)
+  alert("Please enter correct OTP")
+}
+}
 
 
   const btnRef = React.useRef();
@@ -34,7 +53,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleAlert = () => {
-    alert("Otp has been Successfully Sent");
+    alert(`Your OTP is ${mypin}`);
+    // setPin(mypin)
     document.getElementById("om").style.display = "none";
     document.getElementById("otp").style.display = "block";
   };
@@ -82,7 +102,9 @@ const Login = () => {
               
               </Text>
               <Box m="auto" ml="10%">
-                <PinInput>
+                <PinInput 
+              defaultValue={mypin.toString()}
+                >
                   <PinInputField />
                   <PinInputField />
                   <PinInputField />
@@ -98,7 +120,9 @@ const Login = () => {
               width={"100%"}
               onClick={() => {
                 onClose();
-                navigate("/service");
+
+                validate();
+              
               }}
               bottom={"0"}
               position={"absolute"}

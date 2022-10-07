@@ -44,8 +44,8 @@ useEffect(()=>{
 //updates
 
 
-  const addcity = JSON.parse(localStorage.getItem("addcity"))
-  const [addresscity,setaddCity]= useState()
+  const addcity = JSON.parse(localStorage.getItem("city"))
+  const [addresscity,setaddCity]= useState(addcity || "Enter city")
 
 
 const handleCity=()=>{
@@ -117,7 +117,7 @@ const handleCity=()=>{
         <Modal isCentered isOpen={isOpen} onClose={onClose} size="3xl" >
           {overlay}
           <ModalContent>
-            <ModalHeader>{addresscity?  addresscity: "Canaught Palace, Delhi"}</ModalHeader>
+            <ModalHeader>{ addresscity }</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <Flex justifyContent="space-between" gap="10px">
@@ -129,7 +129,7 @@ const handleCity=()=>{
                 </Box>
                 <Box width="250px">
                   <Box></Box>
-                  <Input placeholder='House/Flat No*' defaultValue={addresscity ? addresscity : ""}
+                  <Input placeholder='Enter Address' defaultValue={addresscity ? addresscity : ""}
             value={addresscity}
             onChange={(e)=>setaddCity(e.target.value)}
             type="tel" required /><br /><br />
