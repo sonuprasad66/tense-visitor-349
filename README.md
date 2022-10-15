@@ -1,6 +1,6 @@
 <h1 align="center">Urban Company Clone</h1> 
 
-<h2 align="center">It's a Service Provider web application with all the major functionalities</h2>
+<h3 align="center">The platform helps customers book reliable & high quality services - beauty treatments, massages, haircuts, home cleaning, handymen, appliance repair, painting, pest control and more – delivered by trained professionals conveniently at home.</h3>
 
 <br />
 <h1 align="center">Tech Stack</h1> 
@@ -39,10 +39,11 @@
 - Authentication 
 - Buy Service In Current Location
 - Add Multiple Services
-- Checkout
 - Booking
+- Payment Summary
+- Checkout
 - Sidebar
-- blog
+- Blog
 - Logout 
 
 
