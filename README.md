@@ -166,10 +166,25 @@ npm run start
 - Geo Location
 
 ## Creators
-- [@Sonu Prasad](https://github.com/sonuprasad66)
-- [@Satyam Gupta](https://github.com/satyamasai)
-- [@MD OWAIS ATHAR](https://github.com/owii8247)
-- [@Om kundu](https://github.com/omkundu)
+
+
+ [![linkedin](https://img.shields.io/badge/sonuprasad66-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sonuprasad66/)
+[![Github](https://img.shields.io/badge/sonuprasad66-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/sonuprasad66/)
+
+
+
+[![linkedin](https://img.shields.io/badge/satyamgupta1516-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/satyamgupta1516/)
+[![Github](https://img.shields.io/badge/satyamasai-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/satyamasai/)
+
+
+
+[![linkedin](https://img.shields.io/badge/mdowaisathar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-owais-athar-a16337a2/)
+[![Github](https://img.shields.io/badge/owii8247-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/owii8247/)
+
+
+
+[![linkedin](https://img.shields.io/badge/omkundu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/omkundu/)
+[![Github](https://img.shields.io/badge/omkundu-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/omkundu/)
 
 
 
