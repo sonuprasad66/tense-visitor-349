@@ -89,7 +89,7 @@ const goService=()=>{
         fontWeight:"bold",
         
       }}>
-      Name:
+      Professional's Name:
       </span>  {mybooking.name}</h2>
       <h2>
       <span style={{
